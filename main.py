@@ -1,7 +1,7 @@
 import string
 import random
 
-def generated_password(length: int = 15):
+def generate_password(length: int = 15):
   alphabet = string.ascii_letters + string.digits + string.punctuation
   password = ''.join(random.choice(alphabet) for i in range(length))
   return password
